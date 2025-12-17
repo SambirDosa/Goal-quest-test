@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goal-Quest | Turn Goals Into Adventures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --primary: #5b6cff;
+            --secondary: #38d9a9;
+            --dark: #1c1f2b;
+            --light: #f5f7ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--primary), #7b8cff);
+            color: white;
+        }
+
+        header {
+            padding: 60px 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        header h1 span {
+            color: var(--secondary);
+        }
+
+        header p {
+            max-width: 600px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 14px 28px;
+            margin-right: 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .primary-btn {
+            background: var(--secondary);
+            color: var(--dark);
+        }
+
+        .primary-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .secondary-btn {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background: white;
+            color: var(--dark);
+        }
+
+        section {
+            background: var(--light);
+            color: var(--dark);
+            padding: 80px 10%;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            opacity: 0.85;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Goal-Quest <span>🚀</span></h1>
+    <p>
+        Goal-Quest transforms your ambitions into exciting daily quests.
+        Stay motivated, track progress, and level up your life — one quest at a time.
+    </p>
+
+    <div class="buttons">
+        <a href="#" class="primary-btn">Start Your Quest</a>
+        <a href="#" class="secondary-btn">Learn More</a>
+    </div>
+</header>
+
+<section>
+    <h2 style="margin-bottom: 40px; text-align: center;">Why Goal-Quest?</h2>
+
+    <div class="features">
+        <div class="card">
+            <h3>🎯 Goal-Driven Quests</h3>
+            <p>
+                Turn long-term goals into small, fun daily challenges that keep you moving forward.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Daily Motivation</h3>
+            <p>
+                Build consistency with streaks, rewards, and progress tracking designed to keep you engaged.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏆 Level Up Your Life</h3>
+            <p>
+                Earn XP, unlock achievements, and watch your personal growth turn into real results.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📈 Progress That Matters</h3>
+            <p>
+                Visual insights help you see how far you’ve come — and what’s next on your journey.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Goal-Quest • Turn Goals Into Adventures
+</footer>
+
+</body>
+</html>
